@@ -40,7 +40,7 @@ with(dataset,
     plot(DateTime, Sub_metering_1, type="l",  col="black", ylab="Energy sub metering", xlab="")
     lines(DateTime, Sub_metering_2, type="l", col="red",   xlab="")
     lines(DateTime, Sub_metering_3, type="l", col="blue",  xlab="")
-    legend("topright", lty=c(1,1,1), cex=0.8, col=c("black","red","blue"),
+    legend("topright", lty=c(1,1,1), cex=0.8, col=c("black","red","blue", box.lty=None),
            legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3") )
 
     plot(DateTime, Global_reactive_power, type="l",  xlab="datetime")
